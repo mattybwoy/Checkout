@@ -10,5 +10,9 @@ describe('#Shop', () => {
   test('If string is B return £30', () => {
     expect(shop.checkout("B")).toBe(30)
   })
+
+  test('If string is C return £20', () => {
+    expect(shop.checkout("C")).toBe(20)
+  })
   
 })
