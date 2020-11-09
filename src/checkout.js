@@ -1,5 +1,8 @@
 export default class Shop {
   checkout(item) {
-    return 50
+    if(item === 'A') {
+      return 50
+    }
+    return 30
   }
-}
+} 
