@@ -6,6 +6,9 @@ export default class Shop {
       return 30
     } else if (item === 'C') {
       return 20 
-    } else { return 15 }
+    } else if (item === 'D') {
+      return 15
+    } else { return -1 }
+    
   }
 } 

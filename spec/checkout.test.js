@@ -18,4 +18,10 @@ describe('#Shop', () => {
   test('If string is D return £15', () => {
     expect(shop.checkout("D")).toBe(15)
   })
+
+  test('If string is a return -1', () => {
+    expect(shop.checkout("a")).toBe(-1)
+  })
+
+  
 })
