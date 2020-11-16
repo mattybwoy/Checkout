@@ -54,5 +54,8 @@ describe('#Shop', () => {
   test('If string contains lowercase letter return -1',() =>{
     expect(shop.checkout("aBc")).toBe(-1)
     expect(shop.checkout("-B8x")).toBe(-1)
+    expect(shop.checkout("18")).toBe(-1)
   })
+
+
 }) 
