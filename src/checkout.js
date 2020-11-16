@@ -1,14 +1,16 @@
 export default class Shop {
+
   checkout(item) {
-    if(item === 'A') {
-      return 50
-    } else if (item === 'B') {
-      return 30
-    } else if (item === 'C') {
-      return 20 
-    } else if (item === 'D') {
-      return 15
-    } else { return -1 }
-    
+    let split = item.split('')
+    let price = 0;
+    const prices = {"A": 50, "B": 30, "C": 20, "D": 15}
+
+    for(let i=0; i< split.length; i++) {
+      if(!prices[split[i]]) {
+        return -1
+      }
+      price += prices[split[i]]
+    }
+    return price;
   }
 } 
