@@ -35,8 +35,13 @@ describe('#Shop', () => {
     expect(shop.checkout("DD")).toBe(30)
   })
 
-  test('If string is AB return £80', () =>{
+  test('If string is AB return £80', () => {
     expect(shop.checkout("AB")).toBe(80)
   })
+  
+  test('If string is ABCD return £115', () => {
+    expect(shop.checkout("ABCD")).toBe(115)
+  })
+
   
 }) 
