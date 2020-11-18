@@ -45,3 +45,14 @@ shop.checkout(18) # => -1
 shop.checkout('ABB') => 95
 shop.checkout('BAB') => 95
 shop.checkout('AAAAAA') # => 260
+
+## Installation
+`npm install`
+
+## Testing
+Jest testing suite<br>
+To run tests `npm test` <br>
+15 tests written and passed
+
+## Contributors
+mattybwoy, indisaurusrex
