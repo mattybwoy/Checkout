@@ -9,22 +9,21 @@ export default class Shop {
     const prices = {"A": 50, "B": 30, "C": 20, "D": 15, "AAA": 130, "BB": 45}
 
     for(let i=0; i< split.length; i++) {
-      var countA = (item.match(/A/g) || []).length;
-      var countB = (item.match(/B/g) || []).length;
-      var countC = (item.match(/C/g) || []).length;
-      var countD = (item.match(/D/g) || []).length;
+      let countA = (item.match(/A/g) || []).length;
+      let countB = (item.match(/B/g) || []).length;
+      let countC = (item.match(/C/g) || []).length;
+      let countD = (item.match(/D/g) || []).length;
 
-      if(!prices[split[i]]) {
-        return -1
-      }
+      if(!prices[split[i]]) {return -1}
+      
       if(countA % 3 === 0) {
         priceA = countA / 3 * prices["AAA"]
-      } else if (countA % 3 !== 0) {
+      } else {
         priceA = (Math.floor(countA / 3) * prices["AAA"]) + (countA % 3 * prices["A"])
       } 
       if(countB % 2 === 0) {
         priceB = countB / 2 * prices["BB"]
-      } else if(countB % 2 !== 0) {
+      } else {
         priceB = (Math.floor(countB / 2) * prices["BB"]) + (countB % 2 * prices["B"])
       } 
       if (countC > 0) {
