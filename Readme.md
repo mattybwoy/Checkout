@@ -42,4 +42,6 @@ shop.checkout('AAA') # => 130
 shop.checkout('aBc') # => -1
 shop.checkout('-B8x') # => -1
 shop.checkout(18) # => -1
+shop.checkout('ABB') => 95
+shop.checkout('BAB') => 95
 shop.checkout('AAAAAA') # => 260

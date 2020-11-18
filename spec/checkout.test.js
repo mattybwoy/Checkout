@@ -57,5 +57,8 @@ describe('#Shop', () => {
     expect(shop.checkout("18")).toBe(-1)
   })
 
+  test('If string contains deal(BBA) and letter return 95', () => {
+    expect(shop.checkout("BBA")).toBe(95)
+  })
 
 }) 
